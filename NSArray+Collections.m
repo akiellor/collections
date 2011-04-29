@@ -34,4 +34,17 @@
 -(NSArray *) filter: (bool(^)(id object))block {
 	return [self select:block];
 }
+
+-(NSArray *) sort: (int(^)(id obj1, id obj2))block {
+	return [self sortedArrayUsingComparator:block];
+}
+
+-(id) first {
+	return [self objectAtIndex:0];
+}
+
+-(id) last {
+	return [self lastObject];
+}
+
 @end

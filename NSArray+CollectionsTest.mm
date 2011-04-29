@@ -59,4 +59,38 @@
     assertThat(actual, contains(@"1", nil));
 }
 
+- (void) testSort {
+    NSArray *array = [NSArray arrayWithObjects:@"4", @"2", @"3", @"1", @"5", nil ];
+	
+	NSArray *actual = [array sort:^(id obj1, id obj2) {
+        return [obj1 localizedCaseInsensitiveCompare:obj2];		
+	}];
+	
+    assertThat(actual, contains(@"1", @"2", @"3", @"4", @"5", nil));
+}
+
+- (void) testFirst {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	id actual = [array first];
+	
+    assertThat(actual, is(@"1"));
+}
+
+- (void) testLast {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	id actual = [array last];
+	
+    assertThat(actual, is(@"5"));
+}
+
+- (void) testMapAndLast {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	id actual = [[array map:^(id object) { return [NSString stringWithFormat:@"WOOT %@", object]; }] last];
+	
+    assertThat(actual, is(@"WOOT 5"));
+}
+
 @end

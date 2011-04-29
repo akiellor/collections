@@ -5,4 +5,7 @@
 -(NSArray *) select: (bool(^)(id))block;
 -(NSArray *) filter: (bool(^)(id))block;
 -(NSArray *) each: (void(^)(id))block;
+-(NSArray *) sort: (int(^)(id, id))block;
+-(id) first;
+-(id) last;
 @end
