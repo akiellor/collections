@@ -142,6 +142,12 @@
 			CE3161AA136AD50300188E56 /* PBXTextBookmark */ = CE3161AA136AD50300188E56 /* PBXTextBookmark */;
 			CE3161AB136AD50300188E56 /* PBXTextBookmark */ = CE3161AB136AD50300188E56 /* PBXTextBookmark */;
 			CE3161AC136AD50300188E56 /* PBXTextBookmark */ = CE3161AC136AD50300188E56 /* PBXTextBookmark */;
+			CE3161AD136AD69B00188E56 /* PBXTextBookmark */ = CE3161AD136AD69B00188E56 /* PBXTextBookmark */;
+			CE3161AE136AD69B00188E56 /* PBXTextBookmark */ = CE3161AE136AD69B00188E56 /* PBXTextBookmark */;
+			CE3161B0136AD69B00188E56 /* PBXTextBookmark */ = CE3161B0136AD69B00188E56 /* PBXTextBookmark */;
+			CE3161B1136AD69B00188E56 /* PBXTextBookmark */ = CE3161B1136AD69B00188E56 /* PBXTextBookmark */;
+			CE3161B2136AD69B00188E56 /* PBXTextBookmark */ = CE3161B2136AD69B00188E56 /* PBXTextBookmark */;
+			CE3161B7136AD6D500188E56 /* PBXTextBookmark */ = CE3161B7136AD6D500188E56 /* PBXTextBookmark */;
 			CE5222471369B475003D9A26 = CE5222471369B475003D9A26 /* PBXTextBookmark */;
 			CE5222491369B475003D9A26 = CE5222491369B475003D9A26 /* PlistBookmark */;
 			CE52224A1369B475003D9A26 = CE52224A1369B475003D9A26 /* PBXTextBookmark */;
@@ -198,7 +204,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 1029;
+		rLoc = 1037;
 		rType = 0;
 		vrLen = 783;
 		vrLoc = 0;
@@ -227,7 +233,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 1029;
+		rLoc = 1037;
 		rType = 0;
 		vrLen = 790;
 		vrLoc = 0;
@@ -305,7 +311,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 37";
 		rLen = 0;
-		rLoc = 1029;
+		rLoc = 1037;
 		rType = 0;
 		vrLen = 735;
 		vrLoc = 0;
@@ -315,7 +321,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 1026;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -354,7 +360,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 1026;
+		rLoc = 1034;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -364,7 +370,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 1024;
+		rLoc = 1032;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -374,7 +380,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 38";
 		rLen = 0;
-		rLoc = 994;
+		rLoc = 1002;
 		rType = 0;
 		vrLen = 784;
 		vrLoc = 0;
@@ -404,7 +410,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 47";
 		rLen = 0;
-		rLoc = 1078;
+		rLoc = 1086;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 80;
@@ -444,7 +450,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 43";
 		rLen = 0;
-		rLoc = 1067;
+		rLoc = 1075;
 		rType = 0;
 		vrLen = 793;
 		vrLoc = 34;
@@ -464,7 +470,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 38";
 		rLen = 0;
-		rLoc = 920;
+		rLoc = 928;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 0;
@@ -474,7 +480,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 976;
+		rLoc = 984;
 		rType = 0;
 		vrLen = 766;
 		vrLoc = 170;
@@ -494,7 +500,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 976;
+		rLoc = 984;
 		rType = 0;
 		vrLen = 781;
 		vrLoc = 155;
@@ -504,7 +510,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 970;
+		rLoc = 978;
 		rType = 0;
 		vrLen = 777;
 		vrLoc = 155;
@@ -514,7 +520,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 970;
+		rLoc = 978;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 170;
@@ -636,7 +642,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 38";
 		rLen = 0;
-		rLoc = 671;
+		rLoc = 679;
 		rType = 0;
 		vrLen = 880;
 		vrLoc = 170;
@@ -646,7 +652,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 40";
 		rLen = 0;
-		rLoc = 693;
+		rLoc = 701;
 		rType = 0;
 		vrLen = 779;
 		vrLoc = 284;
@@ -666,7 +672,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 38";
 		rLen = 0;
-		rLoc = 671;
+		rLoc = 679;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 284;
@@ -686,7 +692,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 34";
 		rLen = 0;
-		rLoc = 669;
+		rLoc = 677;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 284;
@@ -742,7 +748,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 34";
 		rLen = 0;
-		rLoc = 669;
+		rLoc = 677;
 		rType = 0;
 		vrLen = 788;
 		vrLoc = 284;
@@ -832,7 +838,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 44";
 		rLen = 0;
-		rLoc = 755;
+		rLoc = 763;
 		rType = 0;
 		vrLen = 845;
 		vrLoc = 309;
@@ -842,7 +848,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 45";
 		rLen = 0;
-		rLoc = 792;
+		rLoc = 800;
 		rType = 0;
 		vrLen = 818;
 		vrLoc = 309;
@@ -852,7 +858,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 39";
 		rLen = 0;
-		rLoc = 742;
+		rLoc = 750;
 		rType = 0;
 		vrLen = 789;
 		vrLoc = 309;
@@ -872,7 +878,7 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 35";
 		rLen = 0;
-		rLoc = 682;
+		rLoc = 690;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 312;
@@ -882,10 +888,76 @@
 		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
 		name = "NSArray+Collections.m: 35";
 		rLen = 0;
-		rLoc = 689;
+		rLoc = 697;
 		rType = 0;
 		vrLen = 882;
 		vrLoc = 190;
+	};
+	CE3161AD136AD69B00188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */;
+		name = "NSArray+CollectionsTest.mm: 87";
+		rLen = 0;
+		rLoc = 2164;
+		rType = 0;
+		vrLen = 1001;
+		vrLoc = 1818;
+	};
+	CE3161AE136AD69B00188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE3161AF136AD69B00188E56 /* NSRegularExpression.h */;
+		name = "NSRegularExpression.h: 81";
+		rLen = 18;
+		rLoc = 5213;
+		rType = 0;
+		vrLen = 4145;
+		vrLoc = 6325;
+	};
+	CE3161AF136AD69B00188E56 /* NSRegularExpression.h */ = {
+		isa = PBXFileReference;
+		name = NSRegularExpression.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRegularExpression.h;
+		sourceTree = "<absolute>";
+	};
+	CE3161B0136AD69B00188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */;
+		name = "NSArray+Collections.h: 6";
+		rLen = 0;
+		rLoc = 153;
+		rType = 0;
+		vrLen = 367;
+		vrLoc = 0;
+	};
+	CE3161B1136AD69B00188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
+		name = "NSArray+Collections.m: 35";
+		rLen = 0;
+		rLoc = 697;
+		rType = 0;
+		vrLen = 873;
+		vrLoc = 0;
+	};
+	CE3161B2136AD69B00188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
+		name = "NSArray+Collections.m: 23";
+		rLen = 179;
+		rLoc = 475;
+		rType = 0;
+		vrLen = 878;
+		vrLoc = 0;
+	};
+	CE3161B7136AD6D500188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */;
+		name = "NSArray+Collections.m: 25";
+		rLen = 0;
+		rLoc = 569;
+		rType = 0;
+		vrLen = 884;
+		vrLoc = 0;
 	};
 	CE52219F1369AE37003D9A26 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -904,21 +976,21 @@
 	CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {967, 554}}";
-			sepNavSelRange = "{335, 0}";
+			sepNavSelRange = "{153, 0}";
 			sepNavVisRange = "{0, 367}";
 		};
 	};
 	CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 767}}";
-			sepNavSelRange = "{689, 0}";
-			sepNavVisRange = "{190, 882}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 676}}";
+			sepNavSelRange = "{569, 0}";
+			sepNavVisRange = "{0, 884}";
 		};
 	};
 	CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {967, 1469}}";
-			sepNavSelRange = "{2499, 0}";
+			sepNavSelRange = "{2164, 0}";
 			sepNavVisRange = "{1818, 1001}";
 			sepNavWindowFrame = "{{50, 0}, {1292, 878}}";
 		};

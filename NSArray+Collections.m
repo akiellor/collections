@@ -12,22 +12,20 @@
 
 -(NSArray *) map: (id(^)(id object))block {
 	NSMutableArray *result = [NSMutableArray array];
-	for ( id item in self )
-	{
-		id mappedItem = block(item);
+	[self each:^(id object) {
+		id mappedItem = block(object);
 		[result addObject:mappedItem];
-	}
+	}];
 	return [NSArray arrayWithArray:result];
 }
 
 -(NSArray *) select: (bool(^)(id object))block {
 	NSMutableArray *result = [NSMutableArray array];
-	for ( id item in self )
-	{
-		if(block(item)){
-			[result addObject:item];
+	[self each:^(id object) {
+		if(block(object)){
+			[result addObject:object];
 		};
-	}
+	}];
 	return [NSArray arrayWithArray:result];
 }
 
