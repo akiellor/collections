@@ -12,10 +12,7 @@
 
 -(NSArray *) map: (id(^)(id object))block {
 	NSMutableArray *result = [NSMutableArray array];
-	[self each:^(id object) {
-		id mappedItem = block(object);
-		[result addObject:mappedItem];
-	}];
+	[self each:^(id object) { [result addObject:block(object)]; }];
 	return [NSArray arrayWithArray:result];
 }
 
