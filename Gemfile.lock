@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    plist (3.1.0)
+    thor (0.14.6)
+    wox (0.0.8)
+      plist
+      thor
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  wox

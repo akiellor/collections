@@ -31,6 +31,14 @@
 	return [NSArray arrayWithArray:result];
 }
 
+-(NSString *) join {
+	return [self join:@""];
+}
+
+-(NSString *) join:(NSString *)separator {
+	return [self componentsJoinedByString:separator];
+}
+
 -(NSArray *) filter: (bool(^)(id object))block {
 	return [self select:block];
 }

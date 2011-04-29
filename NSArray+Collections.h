@@ -6,6 +6,8 @@
 -(NSArray *) filter: (bool(^)(id))block;
 -(NSArray *) each: (void(^)(id))block;
 -(NSArray *) sort: (int(^)(id, id))block;
+-(NSString *) join;
+-(NSString *) join:(NSString *)separator;
 -(id) first;
 -(id) last;
 @end

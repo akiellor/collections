@@ -267,7 +267,6 @@
 								<string>CE5221A71369B0A4003D9A26</string>
 								<string>08FB77AEFE84172EC02AAC07</string>
 								<string>32C88DFF0371C24200C91783</string>
-								<string>0867D69AFE84028FC02AAC07</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -275,8 +274,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>13</integer>
+									<integer>5</integer>
+									<integer>3</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NSArray+CollectionsTest.mm</string>
+								<string>NSArray+Collections.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,21 +325,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>NSArray+CollectionsTest.mm</string>
+										<string>NSArray+Collections.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>CE316121136AC48300188E56</string>
+										<string>CE3161AC136AD50300188E56</string>
 										<key>history</key>
 										<array>
-											<string>CE5222471369B475003D9A26</string>
 											<string>CE5222491369B475003D9A26</string>
-											<string>CE52224A1369B475003D9A26</string>
 											<string>CE5222611369B5CB003D9A26</string>
 											<string>CE819E371369C02000AEAFA8</string>
-											<string>CE316114136AC32800188E56</string>
-											<string>CE316117136AC39200188E56</string>
-											<string>CE316105136AC19D00188E56</string>
+											<string>CE31617F136AD2D400188E56</string>
+											<string>CE316181136AD2D400188E56</string>
+											<string>CE316195136AD41500188E56</string>
+											<string>CE316197136AD41500188E56</string>
+											<string>CE3161A3136AD48100188E56</string>
+											<string>CE3161A4136AD48100188E56</string>
+											<string>CE3161AA136AD50300188E56</string>
+											<string>CE3161AB136AD50300188E56</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

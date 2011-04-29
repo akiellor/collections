@@ -85,6 +85,22 @@
     assertThat(actual, is(@"5"));
 }
 
+- (void) testJoin {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSString *actual = [array join];
+	
+    assertThat(actual, is(@"12345"));
+}
+
+- (void) testJoinWithSeparator {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSString *actual = [array join:@","];
+	
+    assertThat(actual, is(@"1,2,3,4,5"));
+}
+
 - (void) testMapAndLast {
     NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
 	
