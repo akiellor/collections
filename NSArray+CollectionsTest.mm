@@ -109,4 +109,53 @@
     assertThat(actual, is(@"WOOT 5"));
 }
 
+- (void) testTake {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array take:2];
+	
+    assertThat(actual, contains(@"1", @"2", nil));
+}
+
+- (void) testTakeZero {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array take:0];
+	
+    assertThat(actual, is(empty()));
+}
+
+- (void) testTakeLength {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array take:5];
+	
+    assertThat(actual, contains(@"1", @"2", @"3", @"4", @"5", nil));
+}
+
+- (void) testStep {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array step:2];
+	
+    assertThat(actual, contains(@"3", @"4", @"5", 
+								nil));
+}
+
+- (void) testStepZero {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array step:0];
+	
+    assertThat(actual, contains(@"1", @"2", @"3", @"4", @"5", nil));
+}
+
+- (void) testStepLength {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [array step:5];
+	
+    assertThat(actual, is(empty()));
+}
+
 @end

@@ -50,4 +50,25 @@
 	return [self lastObject];
 }
 
+-(NSArray *) take: (int)numberToTake {
+	NSMutableArray *result = [NSMutableArray array];
+	for ( int i = 0; i < [self count]; i++ )
+	{
+		if (i < numberToTake) {
+			[result addObject:[self objectAtIndex:i]];
+		}
+		
+	}
+	return [NSArray arrayWithArray:result];
+}
+
+-(NSArray *) step: (int)numberToStep {
+	NSMutableArray *result = [NSMutableArray array];
+	for ( int i = numberToStep; i < [self count]; i++ )
+	{
+		[result addObject:[self objectAtIndex:i]];
+	}
+	return [NSArray arrayWithArray:result];
+}
+
 @end

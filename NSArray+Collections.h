@@ -8,6 +8,8 @@
 -(NSArray *) sort: (int(^)(id, id))block;
 -(NSString *) join;
 -(NSString *) join:(NSString *)separator;
+-(NSArray *) take:(int)number;
+-(NSArray *) step:(int)number;
 -(id) first;
 -(id) last;
 @end
