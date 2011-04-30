@@ -158,4 +158,12 @@
     assertThat(actual, is(empty()));
 }
 
+- (void) testStepTake {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSArray *actual = [[array step:1] take:2];
+	
+    assertThat(actual, contains(@"2", @"3", nil));
+}
+
 @end

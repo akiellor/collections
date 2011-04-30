@@ -200,6 +200,7 @@
 			CE316206136BD14000188E56 /* PBXTextBookmark */ = CE316206136BD14000188E56 /* PBXTextBookmark */;
 			CE316207136BD14000188E56 /* PBXTextBookmark */ = CE316207136BD14000188E56 /* PBXTextBookmark */;
 			CE31620A136BD15200188E56 /* PBXTextBookmark */ = CE31620A136BD15200188E56 /* PBXTextBookmark */;
+			CE31620B136BD1A100188E56 /* PBXTextBookmark */ = CE31620B136BD1A100188E56 /* PBXTextBookmark */;
 			CE5222471369B475003D9A26 = CE5222471369B475003D9A26 /* PBXTextBookmark */;
 			CE5222491369B475003D9A26 = CE5222491369B475003D9A26 /* PlistBookmark */;
 			CE52224A1369B475003D9A26 = CE52224A1369B475003D9A26 /* PBXTextBookmark */;
@@ -1544,6 +1545,16 @@
 		vrLen = 1034;
 		vrLoc = 3010;
 	};
+	CE31620B136BD1A100188E56 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */;
+		name = "NSArray+CollectionsTest.mm: 166";
+		rLen = 0;
+		rLoc = 4242;
+		rType = 0;
+		vrLen = 1057;
+		vrLoc = 3197;
+	};
 	CE52219F1369AE37003D9A26 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
@@ -1574,9 +1585,9 @@
 	};
 	CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {967, 2106}}";
-			sepNavSelRange = "{4033, 0}";
-			sepNavVisRange = "{3010, 1034}";
+			sepNavIntBoundsRect = "{{0, 0}, {967, 2197}}";
+			sepNavSelRange = "{4242, 0}";
+			sepNavVisRange = "{3197, 1057}";
 			sepNavWindowFrame = "{{50, 0}, {1292, 878}}";
 		};
 	};
