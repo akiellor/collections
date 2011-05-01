@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA747D9F0F9514B9006C5449 /* Collections_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */; };
-		CE5221A51369AEAC003D9A26 /* NSArray+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */; };
-		CE5221A61369AEAC003D9A26 /* NSArray+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */; };
-		CE5221AA1369B0C7003D9A26 /* NSArray+CollectionsTest.mm in Headers */ = {isa = PBXBuildFile; fileRef = CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */; };
-		CE5221D61369B2DF003D9A26 /* NSArray+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */; };
-		CE52222B1369B308003D9A26 /* NSArray+CollectionsTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */; };
-		CE5222321369B353003D9A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		CE31629C136C34D900188E56 /* NSArray+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CE31627B136C342D00188E56 /* NSArray+Collections.h */; };
+		CE31629D136C34DF00188E56 /* NSArray+CollectionsTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE316279136C342D00188E56 /* NSArray+CollectionsTest.mm */; };
+		CE31629E136C34DF00188E56 /* NSArray+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31627C136C342D00188E56 /* NSArray+Collections.m */; };
 		CE5222331369B360003D9A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		CE5222571369B534003D9A26 /* NSArray+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */; };
 		CE819E451369C1CE00AEAFA8 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */; };
 		CE819EE61369C42400AEAFA8 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */; };
 /* End PBXBuildFile section */
@@ -34,18 +29,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collections_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collections_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collections.h"; sourceTree = "<group>"; };
-		CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collections.m"; sourceTree = "<group>"; };
-		CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+CollectionsTest.mm"; sourceTree = "<group>"; };
-		CE5221C71369B218003D9A26 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		CE316279136C342D00188E56 /* NSArray+CollectionsTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+CollectionsTest.mm"; sourceTree = "<group>"; };
+		CE31627B136C342D00188E56 /* NSArray+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collections.h"; sourceTree = "<group>"; };
+		CE31627C136C342D00188E56 /* NSArray+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collections.m"; sourceTree = "<group>"; };
+		CE31627E136C342D00188E56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3162EF136C393500188E56 /* CollectionsFramework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CollectionsFramework-Info.plist"; sourceTree = "<group>"; };
+		CE3162F0136C395800188E56 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollections.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3162F1136C395800188E56 /* CollectionsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5221D21369B2BA003D9A26 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = /Users/akiellor/Frameworks/OCHamcrest.framework; sourceTree = "<absolute>"; };
-		D2AAC07E0554694100DB518D /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollections.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE3162D6136C36E100188E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3162E2136C372500188E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE5221CF1369B2BA003D9A26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,40 +66,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2AAC07C0554694100DB518D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE5222321369B353003D9A26 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		034768DFFF38A50411DB9C8B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D2AAC07E0554694100DB518D /* libCollections.a */,
-				CE5221D21369B2BA003D9A26 /* Test.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0867D691FE84028FC02AAC07 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				CE5221A71369B0A4003D9A26 /* Test Cases */,
-				08FB77AEFE84172EC02AAC07 /* Classes */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
-				0867D69AFE84028FC02AAC07 /* Frameworks */,
-				034768DFFF38A50411DB9C8B /* Products */,
-				CE5221C71369B218003D9A26 /* Test-Info.plist */,
+				CE316278136C342D00188E56 /* Test Cases */,
+				CE31627A136C342D00188E56 /* Classes */,
+				CE31627D136C342D00188E56 /* Resources */,
+				AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */,
+				CE316249136C302E00188E56 /* Frameworks */,
+				CE5221D21369B2BA003D9A26 /* Test.octest */,
+				CE3162F0136C395800188E56 /* libCollections.a */,
+				CE3162F1136C395800188E56 /* CollectionsFramework.framework */,
 			);
 			name = Collections;
 			sourceTree = "<group>";
 		};
-		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+		CE316249136C302E00188E56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
@@ -97,63 +93,103 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+		CE316278136C342D00188E56 /* Test Cases */ = {
 			isa = PBXGroup;
 			children = (
-				CE5221A31369AEAC003D9A26 /* NSArray+Collections.h */,
-				CE5221A41369AEAC003D9A26 /* NSArray+Collections.m */,
+				CE316279136C342D00188E56 /* NSArray+CollectionsTest.mm */,
 			);
-			name = Classes;
+			path = "Test Cases";
 			sourceTree = "<group>";
 		};
-		32C88DFF0371C24200C91783 /* Other Sources */ = {
+		CE31627A136C342D00188E56 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */,
+				CE31627B136C342D00188E56 /* NSArray+Collections.h */,
+				CE31627C136C342D00188E56 /* NSArray+Collections.m */,
 			);
-			name = "Other Sources";
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		CE5221A71369B0A4003D9A26 /* Test Cases */ = {
+		CE31627D136C342D00188E56 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CE5221A81369B0C7003D9A26 /* NSArray+CollectionsTest.mm */,
+				CE3162EF136C393500188E56 /* CollectionsFramework-Info.plist */,
+				CE31627E136C342D00188E56 /* Info.plist */,
 			);
-			name = "Test Cases";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		CE3162D4136C36E100188E56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3162DF136C372500188E56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE5222651369B5CB003D9A26 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5222571369B534003D9A26 /* NSArray+Collections.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2AAC07A0554694100DB518D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA747D9F0F9514B9006C5449 /* Collections_Prefix.pch in Headers */,
-				CE5221A51369AEAC003D9A26 /* NSArray+Collections.h in Headers */,
-				CE5221AA1369B0C7003D9A26 /* NSArray+CollectionsTest.mm in Headers */,
+				CE31629C136C34D900188E56 /* NSArray+Collections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		CE3162D7136C36E100188E56 /* Collections */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3162DE136C36E800188E56 /* Build configuration list for PBXNativeTarget "Collections" */;
+			buildPhases = (
+				CE3162D4136C36E100188E56 /* Headers */,
+				CE3162D5136C36E100188E56 /* Sources */,
+				CE3162D6136C36E100188E56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Collections;
+			productName = Collections;
+			productReference = CE3162F0136C395800188E56 /* libCollections.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE3162E3136C372500188E56 /* CollectionsFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3162E9136C373000188E56 /* Build configuration list for PBXNativeTarget "CollectionsFramework" */;
+			buildPhases = (
+				CE3162DF136C372500188E56 /* Headers */,
+				CE3162E0136C372500188E56 /* Resources */,
+				CE3162E1136C372500188E56 /* Sources */,
+				CE3162E2136C372500188E56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionsFramework;
+			productName = CollectionsFramework;
+			productReference = CE3162F1136C395800188E56 /* CollectionsFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		CE5221D11369B2BA003D9A26 /* Test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5221D51369B2D8003D9A26 /* Build configuration list for PBXNativeTarget "Test" */;
 			buildPhases = (
+				CE5221CF1369B2BA003D9A26 /* Frameworks */,
 				CE819E921369C3F000AEAFA8 /* CopyFiles */,
 				CE5222651369B5CB003D9A26 /* Headers */,
-				CE5221CE1369B2BA003D9A26 /* Sources */,
-				CE5221CF1369B2BA003D9A26 /* Frameworks */,
+				CE316268136C336300188E56 /* Sources */,
 				CE5221D01369B2BA003D9A26 /* ShellScript */,
 			);
 			buildRules = (
@@ -164,23 +200,6 @@
 			productName = Test;
 			productReference = CE5221D21369B2BA003D9A26 /* Test.octest */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D2AAC07D0554694100DB518D /* Collections */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Collections" */;
-			buildPhases = (
-				D2AAC07A0554694100DB518D /* Headers */,
-				D2AAC07B0554694100DB518D /* Sources */,
-				D2AAC07C0554694100DB518D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Collections;
-			productName = Collections;
-			productReference = D2AAC07E0554694100DB518D /* libCollections.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,15 +217,26 @@
 				German,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* Collections */;
-			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			productRefGroup = 0867D691FE84028FC02AAC07 /* Collections */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2AAC07D0554694100DB518D /* Collections */,
+				CE3162D7136C36E100188E56 /* Collections */,
 				CE5221D11369B2BA003D9A26 /* Test */,
+				CE3162E3136C372500188E56 /* CollectionsFramework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE3162E0136C372500188E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		CE5221D01369B2BA003D9A26 /* ShellScript */ = {
@@ -225,58 +255,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CE5221CE1369B2BA003D9A26 /* Sources */ = {
+		CE316268136C336300188E56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE52222B1369B308003D9A26 /* NSArray+CollectionsTest.mm in Sources */,
-				CE5221D61369B2DF003D9A26 /* NSArray+Collections.m in Sources */,
+				CE31629D136C34DF00188E56 /* NSArray+CollectionsTest.mm in Sources */,
+				CE31629E136C34DF00188E56 /* NSArray+Collections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2AAC07B0554694100DB518D /* Sources */ = {
+		CE3162D5136C36E100188E56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5221A61369AEAC003D9A26 /* NSArray+Collections.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE3162E1136C372500188E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB921F08733DC00010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/Collections.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Collections_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = Collections;
-			};
-			name = Debug;
-		};
-		1DEB922008733DC00010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/Collections.dst;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Collections_Prefix.pch;
-				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = Collections;
-			};
-			name = Release;
-		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -304,6 +308,104 @@
 			};
 			name = Release;
 		};
+		CE3162D9136C36E200188E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Collections;
+			};
+			name = Debug;
+		};
+		CE3162DA136C36E200188E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Collections;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		CE3162E5136C372600188E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "CollectionsFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CollectionsFramework;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE3162E6136C372600188E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "CollectionsFramework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CollectionsFramework;
+				SDKROOT = macosx;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		CE5221D31369B2BA003D9A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,11 +422,9 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Test-Info.plist";
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
 					"-framework",
 					SenTestingKit,
 				);
@@ -350,11 +450,9 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Test-Info.plist";
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
-					"-framework",
-					Cocoa,
 					"-framework",
 					SenTestingKit,
 				);
@@ -369,20 +467,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Collections" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1DEB921F08733DC00010E9CD /* Debug */,
-				1DEB922008733DC00010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Collections" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3162DE136C36E800188E56 /* Build configuration list for PBXNativeTarget "Collections" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3162D9136C36E200188E56 /* Debug */,
+				CE3162DA136C36E200188E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3162E9136C373000188E56 /* Build configuration list for PBXNativeTarget "CollectionsFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3162E5136C372600188E56 /* Debug */,
+				CE3162E6136C372600188E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

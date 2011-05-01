@@ -16,7 +16,7 @@
 	return [NSArray arrayWithArray:result];
 }
 
--(NSArray *) select: (bool(^)(id object))block {
+-(NSArray *) select: (BOOL(^)(id object))block {
 	NSMutableArray *result = [NSMutableArray array];
 	[self each:^(id object) {
 		if(block(object)){
@@ -34,7 +34,7 @@
 	return [self componentsJoinedByString:separator];
 }
 
--(NSArray *) filter: (bool(^)(id object))block {
+-(NSArray *) filter: (BOOL(^)(id object))block {
 	return [self select:block];
 }
 
@@ -71,4 +71,29 @@
 	return [NSArray arrayWithArray:result];
 }
 
+-(BOOL) all: (BOOL(^)(id obj1))block {
+	BOOL result = YES;
+	for(id object in self){
+		result = result && block(object);
+	}
+	return result;
+}
+
+-(BOOL) none: (BOOL(^)(id obj1))block {
+	for(id object in self){
+		if(block(object)){
+			return NO;
+		}
+	}
+	return YES;
+}
+
+-(BOOL) any: (BOOL(^)(id obj1))block {
+	for(id object in self){
+		if(block(object)){
+			return YES;
+		}
+	}
+	return NO;
+}
 @end

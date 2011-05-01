@@ -43,7 +43,7 @@
     NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
 	
 	NSArray *actual = [array select:^(id item) {
-		return item == @"1";
+		return (BOOL)(item == @"1");
 	}];
 	
     assertThat(actual, contains(@"1", nil));
@@ -53,7 +53,7 @@
     NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
 	
 	NSArray *actual = [array filter:^(id item) {
-		return item == @"1";
+		return [item isEqual:@"1"];
 	}];
 	
     assertThat(actual, contains(@"1", nil));
@@ -166,4 +166,76 @@
     assertThat(actual, contains(@"2", @"3", nil));
 }
 
+- (void) testAllWhenValuesYesYieldYes {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array all:^(id object) { return YES; }];
+	
+    assertThatBool(actual, equalToBool(YES));
+}
+
+- (void) testAllWhenSomeValuesNoYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array all:^(id object) { return [object isEqual:@"1"]; }];
+	
+    assertThatBool(actual, equalToBool(NO));
+}
+
+- (void) testAllWhenValuesNoYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array all:^(id object) { return NO; }];
+	
+    assertThatBool(actual, equalToBool(NO));
+}
+
+
+- (void) testNoneWhenValuesYesYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array none:^(id object) { return YES; }];
+	
+    assertThatBool(actual, equalToBool(NO));
+}
+
+- (void) testNoneWhenSomeValuesYesYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array none:^(id object) { return [object isEqual:@"1"]; }];
+	
+    assertThatBool(actual, equalToBool(NO));
+}
+
+- (void) testNoneWhenValuesNoYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array none:^(id object) { return NO; }];
+	
+    assertThatBool(actual, equalToBool(YES));
+}
+
+- (void) testAnyWhenValuesYesYieldYes {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array any:^(id object) { return YES; }];
+	
+    assertThatBool(actual, equalToBool(YES));
+}
+
+- (void) testAnyWhenSomeValuesYesYieldYes {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array any:^(id object) { return [object isEqual:@"1"]; }];
+	
+    assertThatBool(actual, equalToBool(YES));
+}
+
+- (void) testAnyWhenValuesNoYieldNo {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	BOOL actual = [array any:^(id object) { return NO; }];
+	
+    assertThatBool(actual, equalToBool(NO));
+}
 @end
