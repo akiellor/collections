@@ -238,4 +238,14 @@
 	
     assertThatBool(actual, equalToBool(NO));
 }
+
+- (void) testReduce {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSString *actual = [array reduce:^(id result, id item) {
+		return [NSString stringWithFormat:@"%@%@", result, item];
+	} initial:@""];
+	
+	assertThat(actual, is(@"12345"));
+}
 @end

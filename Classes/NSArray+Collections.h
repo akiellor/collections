@@ -1,11 +1,12 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (NSArray_Collections)
--(NSArray *) map: (id(^)(id))block;
--(NSArray *) select: (BOOL(^)(id))block;
--(NSArray *) filter: (BOOL(^)(id))block;
--(NSArray *) each: (void(^)(id))block;
--(NSArray *) sort: (int(^)(id, id))block;
+-(NSArray *) map:(id(^)(id))block;
+-(id) reduce:(id(^)(id value, id object))block initial:(id)initial;
+-(NSArray *) select:(BOOL(^)(id))block;
+-(NSArray *) filter:(BOOL(^)(id))block;
+-(NSArray *) each:(void(^)(id))block;
+-(NSArray *) sort:(int(^)(id, id))block;
 -(NSString *) join;
 -(NSString *) join:(NSString *)separator;
 -(NSArray *) take:(int)number;

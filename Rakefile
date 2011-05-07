@@ -15,11 +15,6 @@ namespace :build do
     system("xcodebuild -target #{TARGET} -configuration #{CONFIG} -sdk iphoneos#{BASE_SDK}")
   end
   
-  desc "Build the static library for the Mac platform"
-  task :mac do
-    system("xcodebuild -target #{TARGET}-Mac -configuration #{CONFIG}")
-  end
-  
   desc "Build a combined simulator/device library using lipo"
   task :combined => [:simulator, :device] do
     FileUtils.mkdir_p("#{BUILD_DIR}/CombinedLib")

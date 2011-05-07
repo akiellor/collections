@@ -96,4 +96,13 @@
 	}
 	return NO;
 }
+
+
+-(id) reduce:(id(^)(id value, id object))block initial:(id)initial {
+	id result = initial;
+	for(id object in self){
+		result = block(result, object);
+	}
+	return result;
+}
 @end
