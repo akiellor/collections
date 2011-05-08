@@ -1,0 +1,24 @@
+Objective-C Collections
+-------------------------------------------------------------------------
+
+Collections.framework is an attempt at improving the standard Objective-C
+Collections classes. The extentions include:
+
+NSArray:
+  - each
+  - map
+  - any
+  - all
+  - none
+  - select
+  - join
+  - ...
+
+TODOS
+-------------------------------------------------------------------------
+
+  * Add enhancements to NSDictionary
+  * Tidy up the Rakefile
+
+
+
