@@ -13,6 +13,9 @@
 		CE5222331369B360003D9A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		CE819E451369C1CE00AEAFA8 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */; };
 		CE819EE61369C42400AEAFA8 /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */; };
+		CEEFE029137626B600CFD6C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		CEEFE02B137627C800CFD6C9 /* NSArray+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CE31627B136C342D00188E56 /* NSArray+Collections.h */; };
+		CEEFE02C137627CD00CFD6C9 /* NSArray+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31627C136C342D00188E56 /* NSArray+Collections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,12 +37,9 @@
 		CE316279136C342D00188E56 /* NSArray+CollectionsTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+CollectionsTest.mm"; sourceTree = "<group>"; };
 		CE31627B136C342D00188E56 /* NSArray+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collections.h"; sourceTree = "<group>"; };
 		CE31627C136C342D00188E56 /* NSArray+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collections.m"; sourceTree = "<group>"; };
-		CE31627E136C342D00188E56 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE3162EF136C393500188E56 /* CollectionsFramework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CollectionsFramework-Info.plist"; sourceTree = "<group>"; };
-		CE3162F0136C395800188E56 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCollections.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3162F1136C395800188E56 /* CollectionsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CollectionsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5221D21369B2BA003D9A26 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = /Users/akiellor/Frameworks/OCHamcrest.framework; sourceTree = "<absolute>"; };
+		CEEFE0481376457000CFD6C9 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollections.a; path = /Users/akiellor/Development/IOS/Collections/build/Debug/libCollections.a; sourceTree = "<absolute>"; };
+		CEEFE0491376457000CFD6C9 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = /Users/akiellor/Development/IOS/Collections/build/Debug/Test.octest; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE3162E2136C372500188E56 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CEEFE029137626B600CFD6C9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +68,8 @@
 			children = (
 				CE316278136C342D00188E56 /* Test Cases */,
 				CE31627A136C342D00188E56 /* Classes */,
-				CE31627D136C342D00188E56 /* Resources */,
 				AA747D9E0F9514B9006C5449 /* Collections_Prefix.pch */,
 				CE316249136C302E00188E56 /* Frameworks */,
-				CE5221D21369B2BA003D9A26 /* Test.octest */,
-				CE3162F0136C395800188E56 /* libCollections.a */,
-				CE3162F1136C395800188E56 /* CollectionsFramework.framework */,
 			);
 			name = Collections;
 			sourceTree = "<group>";
@@ -110,15 +100,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		CE31627D136C342D00188E56 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				CE3162EF136C393500188E56 /* CollectionsFramework-Info.plist */,
-				CE31627E136C342D00188E56 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,13 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE3162DF136C372500188E56 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CEEFE02B137627C800CFD6C9 /* NSArray+Collections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,26 +136,8 @@
 			);
 			name = Collections;
 			productName = Collections;
-			productReference = CE3162F0136C395800188E56 /* libCollections.a */;
+			productReference = CEEFE0481376457000CFD6C9 /* libCollections.a */;
 			productType = "com.apple.product-type.library.static";
-		};
-		CE3162E3136C372500188E56 /* CollectionsFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE3162E9136C373000188E56 /* Build configuration list for PBXNativeTarget "CollectionsFramework" */;
-			buildPhases = (
-				CE3162DF136C372500188E56 /* Headers */,
-				CE3162E0136C372500188E56 /* Resources */,
-				CE3162E1136C372500188E56 /* Sources */,
-				CE3162E2136C372500188E56 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CollectionsFramework;
-			productName = CollectionsFramework;
-			productReference = CE3162F1136C395800188E56 /* CollectionsFramework.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		CE5221D11369B2BA003D9A26 /* Test */ = {
 			isa = PBXNativeTarget;
@@ -198,7 +155,7 @@
 			);
 			name = Test;
 			productName = Test;
-			productReference = CE5221D21369B2BA003D9A26 /* Test.octest */;
+			productReference = CEEFE0491376457000CFD6C9 /* Test.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -223,20 +180,9 @@
 			targets = (
 				CE3162D7136C36E100188E56 /* Collections */,
 				CE5221D11369B2BA003D9A26 /* Test */,
-				CE3162E3136C372500188E56 /* CollectionsFramework */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CE3162E0136C372500188E56 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		CE5221D01369B2BA003D9A26 /* ShellScript */ = {
@@ -268,13 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE3162E1136C372500188E56 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CEEFE02C137627CD00CFD6C9 /* NSArray+Collections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,12 +254,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -338,72 +272,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "";
 				INSTALL_PATH = /usr/local/lib;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				PRODUCT_NAME = Collections;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		CE3162E5136C372600188E56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "CollectionsFramework-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = CollectionsFramework;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		CE3162E6136C372600188E56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "CollectionsFramework-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = CollectionsFramework;
-				SDKROOT = macosx;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -482,15 +355,6 @@
 			buildConfigurations = (
 				CE3162D9136C36E200188E56 /* Debug */,
 				CE3162DA136C36E200188E56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE3162E9136C373000188E56 /* Build configuration list for PBXNativeTarget "CollectionsFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE3162E5136C372600188E56 /* Debug */,
-				CE3162E6136C372600188E56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

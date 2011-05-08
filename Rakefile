@@ -33,29 +33,16 @@ namespace :build do
     build_framework("#{BUILD_DIR}/CombinedLib/libCollections.a")
   end
   
-  desc "Create the static framework for the Mac platform"
-  task :mac_framework => [:clean, :mac] do
-    build_framework("#{BUILD_DIR}/Release-Mac/libCollections.a")
-  end
-  
-  desc "Build a disk image for the iOS framework"
-  task :diskimage => :framework do
-    FileUtils.mkdir_p("pkg")
-    system("hdiutil create -srcfolder #{BUILD_DIR}/Release pkg/Collections-#{VERSION}.dmg")
-  end
-  
-  desc "Build a disk image for the Mac framework"
-  task :diskimage_mac => :mac_framework do
-    FileUtils.mkdir_p("pkg")
-    system("hdiutil create -srcfolder #{BUILD_DIR}/Release pkg/Collections-Mac-#{VERSION}.dmg")
-  end
-  
   def build_framework(path_to_library)
     FileUtils.rm_rf("#{BUILD_DIR}/Release")
     
-    system("xcodebuild -target CollectionsFramework -configuration #{CONFIG}")
-    system("cp #{path_to_library} #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Collections")
-    system("ln -s Versions/A/Collections #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Collections")
+    FileUtils.makedirs("#{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Headers")
+    FileUtils.makedirs("#{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Resources")
+    sh("cp #{path_to_library} #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Collections")
+    sh("ln -s Versions/A/Collections #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Collections")
+    sh("ln -s Versions/A/Headers #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Headers")
+    sh("cp Classes/*.h #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Headers")
+    sh("cp Info.plist #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Resources")
   end
 end
 
