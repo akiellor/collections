@@ -248,4 +248,42 @@
 	
 	assertThat(actual, is(@"12345"));
 }
+
+- (void) testDetect {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSString *actual = [array detect:^(id item) {
+		return [item isEqual:@"2"];
+	}];
+	
+	assertThat(actual, is(@"2"));
+}
+
+- (void) testFirstWithBlock {
+    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", @"5", nil ];
+	
+	NSString *actual = [array first:^(id item) {
+		return [item isEqual:@"2"];
+	}];
+	
+	assertThat(actual, is(@"2"));
+}
+
+- (void) testPartition {
+    NSArray *array = [NSArray arrayWithObjects:[NSNumber numberWithInt:1],
+                                               [NSNumber numberWithInt:2],
+                                               [NSNumber numberWithInt:3],
+                                               [NSNumber numberWithInt:4], nil ];
+	
+	NSDictionary *actual = [array partition:(id)^(id item) {
+        if([item intValue] % 2 == 0){
+            return @"even";
+        } else {
+            return @"odd";
+        }
+	}];
+	
+	assertThat([actual valueForKey:@"even"], contains([NSNumber numberWithInt:2], [NSNumber numberWithInt:4], nil));
+	assertThat([actual valueForKey:@"odd"], contains([NSNumber numberWithInt:1], [NSNumber numberWithInt:3], nil));
+}
 @end

@@ -3,27 +3,27 @@ namespace :build do
   CONFIG = "Release"
   LIB_NAME = "libCollections.a"
   BUILD_DIR = "build"
-  BASE_SDK = 4.2
+  BASE_SDK = 4.3
   
   desc "Build the static library for the simulator platform"
   task :simulator do
-    system("xcodebuild -target #{TARGET} -configuration #{CONFIG} -sdk iphonesimulator#{BASE_SDK}")
+    sh("xcodebuild -target #{TARGET} -configuration #{CONFIG} -sdk iphonesimulator#{BASE_SDK}")
   end
   
   desc "Build the static library for the device platform"
   task :device do
-    system("xcodebuild -target #{TARGET} -configuration #{CONFIG} -sdk iphoneos#{BASE_SDK}")
+    sh("xcodebuild -target #{TARGET} -configuration #{CONFIG} -sdk iphoneos#{BASE_SDK}")
   end
   
   desc "Build a combined simulator/device library using lipo"
-  task :combined => [:simulator, :device] do
+  task :combined => ['test:sen', :simulator, :device] do
     FileUtils.mkdir_p("#{BUILD_DIR}/CombinedLib")
-    system("lipo #{BUILD_DIR}/#{CONFIG}-iphonesimulator/#{LIB_NAME} #{BUILD_DIR}/#{CONFIG}-iphoneos/#{LIB_NAME} -create -output #{BUILD_DIR}/CombinedLib/libCollections.a")
+    sh("lipo #{BUILD_DIR}/#{CONFIG}-iphonesimulator/#{LIB_NAME} #{BUILD_DIR}/#{CONFIG}-iphoneos/#{LIB_NAME} -create -output #{BUILD_DIR}/CombinedLib/libCollections.a")
   end
   
   desc "Clean the build products directory"
   task :clean do
-    system("xcodebuild clean")
+    sh("xcodebuild clean")
   end
 
   FRAMEWORK_NAME = "Collections.framework"
@@ -42,7 +42,14 @@ namespace :build do
     sh("ln -s Versions/A/Collections #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Collections")
     sh("ln -s Versions/A/Headers #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Headers")
     sh("cp Classes/*.h #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Headers")
-    sh("cp Info.plist #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Resources")
+    sh("cp Resources/Info.plist #{BUILD_DIR}/Release/#{FRAMEWORK_NAME}/Versions/A/Resources")
+  end
+end
+
+namespace :test do
+  desc "Test the framework"
+  task :sen do
+    sh("xcodebuild -target Test")
   end
 end
 

@@ -38,8 +38,8 @@
 		CE31627B136C342D00188E56 /* NSArray+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collections.h"; sourceTree = "<group>"; };
 		CE31627C136C342D00188E56 /* NSArray+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collections.m"; sourceTree = "<group>"; };
 		CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = /Users/akiellor/Frameworks/OCHamcrest.framework; sourceTree = "<absolute>"; };
-		CEEFE0481376457000CFD6C9 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollections.a; path = /Users/akiellor/Development/IOS/Collections/build/Debug/libCollections.a; sourceTree = "<absolute>"; };
-		CEEFE0491376457000CFD6C9 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = /Users/akiellor/Development/IOS/Collections/build/Debug/Test.octest; sourceTree = "<absolute>"; };
+		CECE72221377FE43001294E9 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = /Users/akiellor/Development/IOS/Collections/build/Release/Test.octest; sourceTree = "<absolute>"; };
+		CECE72231377FF1B001294E9 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollections.a; path = "/Users/akiellor/Development/IOS/Collections/build/Release-iphoneos/libCollections.a"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 			);
 			name = Collections;
 			productName = Collections;
-			productReference = CEEFE0481376457000CFD6C9 /* libCollections.a */;
+			productReference = CECE72231377FF1B001294E9 /* libCollections.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		CE5221D11369B2BA003D9A26 /* Test */ = {
@@ -155,7 +155,7 @@
 			);
 			name = Test;
 			productName = Test;
-			productReference = CEEFE0491376457000CFD6C9 /* Test.octest */;
+			productReference = CECE72221377FE43001294E9 /* Test.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -255,12 +255,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				INSTALL_PATH = /usr/local/lib;
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
+				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				PRODUCT_NAME = Collections;
 			};

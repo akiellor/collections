@@ -16,4 +16,7 @@
 -(BOOL) any:(BOOL(^)(id))block;
 -(id) first;
 -(id) last;
+-(id) detect:(BOOL(^)(id))block;
+-(id) first:(BOOL(^)(id))block;
+-(NSDictionary *) partition:(id(^)(id))block;
 @end

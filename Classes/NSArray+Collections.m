@@ -105,4 +105,32 @@
 	}
 	return result;
 }
+
+-(id) detect:(BOOL (^)(id))block {
+    for(id object in self){
+        if(block(object)){
+            return object;
+        }
+    }
+    return nil;
+}
+
+-(id) first:(BOOL (^)(id))block {
+    return [self detect:block];
+}
+
+-(NSDictionary *) partition:(id(^)(id))block{
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+    [self each:^(id item){
+        id key = block(item);
+        NSMutableArray *objects = [result objectForKey:key];
+        if(objects == nil){
+            objects = [NSMutableArray array];
+        }
+        [objects addObject:item];
+        [result setObject:objects forKey:key];
+    }];
+    return result;
+}
+
 @end
