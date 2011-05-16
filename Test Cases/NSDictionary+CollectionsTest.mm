@@ -10,7 +10,7 @@
 
 @implementation NSDictionary_CollectionsTest
 
--(void) testEachWithIndex {
+-(void) test_each_yields_to_block_for_each_key_and_value {
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
     NSMutableArray *keys = [NSMutableArray array];
     NSMutableArray *values = [NSMutableArray array];
