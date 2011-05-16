@@ -1,6 +1,5 @@
 #import "NSArray+Collections.h"
 
-
 @implementation NSArray (NSArray_Collections)
 -(NSArray *) each: (void(^)(id object))block {
 	for ( id item in self )

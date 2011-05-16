@@ -16,6 +16,9 @@
 		CEEFE029137626B600CFD6C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		CEEFE02B137627C800CFD6C9 /* NSArray+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CE31627B136C342D00188E56 /* NSArray+Collections.h */; };
 		CEEFE02C137627CD00CFD6C9 /* NSArray+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CE31627C136C342D00188E56 /* NSArray+Collections.m */; };
+		CEFF945E1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEFF945C1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm */; };
+		CEFF94611380F22B0094B3E1 /* NSDictionary+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */; };
+		CEFF94621380F22B0094B3E1 /* NSDictionary+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,8 +41,11 @@
 		CE31627B136C342D00188E56 /* NSArray+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collections.h"; sourceTree = "<group>"; };
 		CE31627C136C342D00188E56 /* NSArray+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collections.m"; sourceTree = "<group>"; };
 		CE819E441369C1CE00AEAFA8 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = /Users/akiellor/Frameworks/OCHamcrest.framework; sourceTree = "<absolute>"; };
-		CECE72221377FE43001294E9 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = /Users/akiellor/Development/IOS/Collections/build/Release/Test.octest; sourceTree = "<absolute>"; };
-		CECE72231377FF1B001294E9 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollections.a; path = "/Users/akiellor/Development/IOS/Collections/build/Release-iphoneos/libCollections.a"; sourceTree = "<absolute>"; };
+		CEFF94591380EFA00094B3E1 /* libCollections.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCollections.a; path = "/Users/akiellor/Development/IOS/Collections/build/Release-iphoneos/libCollections.a"; sourceTree = "<absolute>"; };
+		CEFF945A1380EFA00094B3E1 /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = /Users/akiellor/Development/IOS/Collections/build/Release/Test.octest; sourceTree = "<absolute>"; };
+		CEFF945C1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDictionary+CollectionsTest.mm"; sourceTree = "<group>"; };
+		CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Collections.h"; sourceTree = "<group>"; };
+		CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Collections.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				CE316279136C342D00188E56 /* NSArray+CollectionsTest.mm */,
+				CEFF945C1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm */,
 			);
 			path = "Test Cases";
 			sourceTree = "<group>";
@@ -96,6 +103,8 @@
 			children = (
 				CE31627B136C342D00188E56 /* NSArray+Collections.h */,
 				CE31627C136C342D00188E56 /* NSArray+Collections.m */,
+				CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */,
+				CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -116,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE31629C136C34D900188E56 /* NSArray+Collections.h in Headers */,
+				CEFF94611380F22B0094B3E1 /* NSDictionary+Collections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +146,7 @@
 			);
 			name = Collections;
 			productName = Collections;
-			productReference = CECE72231377FF1B001294E9 /* libCollections.a */;
+			productReference = CEFF94591380EFA00094B3E1 /* libCollections.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		CE5221D11369B2BA003D9A26 /* Test */ = {
@@ -155,7 +165,7 @@
 			);
 			name = Test;
 			productName = Test;
-			productReference = CECE72221377FE43001294E9 /* Test.octest */;
+			productReference = CEFF945A1380EFA00094B3E1 /* Test.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -207,6 +217,8 @@
 			files = (
 				CE31629D136C34DF00188E56 /* NSArray+CollectionsTest.mm in Sources */,
 				CE31629E136C34DF00188E56 /* NSArray+Collections.m in Sources */,
+				CEFF945E1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm in Sources */,
+				CEFF94621380F22B0094B3E1 /* NSDictionary+Collections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
