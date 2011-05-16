@@ -1,5 +1,5 @@
 #import <SenTestingKit/SenTestingKit.h>
-#import "NSDictionary+Collections.h"
+#import "Collections.h"
 
 #define HC_SHORTHAND
 

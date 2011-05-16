@@ -19,6 +19,7 @@
 		CEFF945E1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEFF945C1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm */; };
 		CEFF94611380F22B0094B3E1 /* NSDictionary+Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */; };
 		CEFF94621380F22B0094B3E1 /* NSDictionary+Collections.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */; };
+		CEFF9465138106D10094B3E1 /* Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFF9463138106D10094B3E1 /* Collections.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		CEFF945C1380F0BB0094B3E1 /* NSDictionary+CollectionsTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSDictionary+CollectionsTest.mm"; sourceTree = "<group>"; };
 		CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Collections.h"; sourceTree = "<group>"; };
 		CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Collections.m"; sourceTree = "<group>"; };
+		CEFF9463138106D10094B3E1 /* Collections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collections.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				CE31627C136C342D00188E56 /* NSArray+Collections.m */,
 				CEFF945F1380F22B0094B3E1 /* NSDictionary+Collections.h */,
 				CEFF94601380F22B0094B3E1 /* NSDictionary+Collections.m */,
+				CEFF9463138106D10094B3E1 /* Collections.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			files = (
 				CE31629C136C34D900188E56 /* NSArray+Collections.h in Headers */,
 				CEFF94611380F22B0094B3E1 /* NSDictionary+Collections.h in Headers */,
+				CEFF9465138106D10094B3E1 /* Collections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
