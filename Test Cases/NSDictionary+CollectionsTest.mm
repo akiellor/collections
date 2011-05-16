@@ -24,4 +24,28 @@
     assertThat(values, containsInAnyOrder(@"value1", @"value2", nil));
 }
 
+-(void) test_each_key_yields_to_block_for_each_key {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    
+    NSMutableArray *keys = [NSMutableArray array];
+    
+    [dict eachKey:^(id key){
+        [keys addObject:key];
+    }];
+
+    assertThat(keys, containsInAnyOrder(@"key1", @"key2", nil));
+}
+
+-(void) test_each_value_yields_to_block_for_each_value {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    
+    NSMutableArray *values = [NSMutableArray array];
+    
+    [dict eachValue:^(id value){
+        [values addObject:value];
+    }];
+    
+    assertThat(values, containsInAnyOrder(@"value1", @"value2", nil));
+}
+
 @end

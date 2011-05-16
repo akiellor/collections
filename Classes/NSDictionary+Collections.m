@@ -8,4 +8,16 @@
     }
 }
 
+-(void)eachKey:(void (^)(id))block{
+    for(id key in [self allKeys]){
+        block(key); 
+    }
+}
+
+-(void)eachValue:(void (^)(id))block{
+    for(id key in [self allKeys]){
+        block([self objectForKey:key]); 
+    }
+}
+
 @end
