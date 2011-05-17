@@ -20,24 +20,24 @@
     }
 }
 
--(NSDictionary *)filterByKey:(BOOL (^)(id))block{
+-(NSDictionary *)filter:(BOOL (^)(id, id))block{
     NSMutableDictionary *result = [NSMutableDictionary dictionary];
     for(id key in [self allKeys]){
-        if(block(key)){
+        if(block(key, [self objectForKey:key])){
             [result setObject:[self objectForKey:key] forKey:key];
         } 
     }
     return [NSDictionary dictionaryWithDictionary:result];
 }
 
--(NSDictionary *)filterByValue:(BOOL (^)(id))block{
-    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+-(NSDictionary *)first:(BOOL (^)(id, id))block{
     for(id key in [self allKeys]){
-        if(block([self objectForKey:key])){
+        if(block(key, [self objectForKey:key])){
+            NSMutableDictionary *result = [NSMutableDictionary dictionary];
             [result setObject:[self objectForKey:key] forKey:key];
+            return [NSDictionary dictionaryWithDictionary:result];
         } 
     }
-    return [NSDictionary dictionaryWithDictionary:result];
+    return [NSDictionary dictionary];
 }
-
 @end

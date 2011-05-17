@@ -41,30 +41,39 @@
     
     NSMutableArray *values = [NSMutableArray array];
     
-    [dict eachValue:^(id value){
+    [dict eachValue:^(id value) {
         [values addObject:value];
     }];
     
     assertThat(values, containsInAnyOrder(@"value1", @"value2", nil));
 }
 
--(void) test_filter_by_key_returns_a_subdictionary_with_keys_matching_block_condition {
+-(void) test_filter_returns_a_subdictionary_with_key_or_value_matching_block_condition {
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
     
-    NSDictionary *actual = [dict filterByKey:^(id key) {
+    NSDictionary *actual = [dict filter:^(id key, id value) {
         return [key isEqual:@"key1"];
     }];
     
     assertThat(actual , hasEntries(@"key1", @"value1", nil));
 }
 
--(void) test_filter_by_value_returns_a_subdictionary_with_values_matching_block_condition {
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+-(void) test_first_returns_a_subdictionary_with_first_matching_entry {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", @"value3", @"key3", nil];
     
-    NSDictionary *actual = [dict filterByValue:^(id value) {
-        return [value isEqual:@"value2"];
+    NSDictionary *actual = [dict first:^(id key, id value) {
+        return [key isEqual:@"key1"];
     }];
     
-    assertThat(actual , hasEntries(@"key2", @"value2", nil));
+    assertThat(actual , hasEntries(@"key1", @"value1", nil));
 }
+
+-(void) test_first_returns_an_emtpy_dictionary_when_no_entries_match {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", @"value3", @"key3", nil];
+    
+    NSDictionary *actual = [dict first:^(id key, id value) { return [key isEqual:@"key7"]; }];
+    
+    assertThat(actual, is(empty()));
+}
+               
 @end
