@@ -30,4 +30,14 @@
     return [NSDictionary dictionaryWithDictionary:result];
 }
 
+-(NSDictionary *)filterByValue:(BOOL (^)(id))block{
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+    for(id key in [self allKeys]){
+        if(block([self objectForKey:key])){
+            [result setObject:[self objectForKey:key] forKey:key];
+        } 
+    }
+    return [NSDictionary dictionaryWithDictionary:result];
+}
+
 @end

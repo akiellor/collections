@@ -7,5 +7,6 @@
 -(void)eachKey:(void(^)(id key))block;
 -(void)eachValue:(void(^)(id value))block;
 -(NSDictionary *)filterByKey:(BOOL(^)(id key))block;
+-(NSDictionary *)filterByValue:(BOOL(^)(id value))block;
 
 @end
