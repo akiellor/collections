@@ -76,4 +76,12 @@
     assertThat(actual, is(empty()));
 }
                
+-(void) test_mapValues_returns_dictionary_with_block_applied_to_values {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"key1", @"2", @"key2", nil];
+
+    NSDictionary *actual = [dict mapValues:^id(id value) { return [@"woot " stringByAppendingString:value]; }];
+
+    assertThat(actual, hasEntries(@"key1", @"woot 1", @"key2", @"woot 2", nil));
+}
+
 @end

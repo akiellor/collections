@@ -8,5 +8,6 @@
 -(void)eachValue:(void(^)(id value))block;
 -(NSDictionary *)filter:(BOOL(^)(id key, id value))block;
 -(NSDictionary *)first:(BOOL(^)(id key, id value))block;
+-(NSDictionary *)mapValues:(id(^)(id value))block;
 
 @end

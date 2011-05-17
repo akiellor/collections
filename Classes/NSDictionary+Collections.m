@@ -40,4 +40,13 @@
     }
     return [NSDictionary dictionary];
 }
+
+-(NSDictionary *)mapValues:(id (^)(id))block{
+    NSMutableDictionary *result = [NSMutableDictionary dictionary];
+    [self each:^(id key, id value) {
+        [result setObject:block(value) forKey:key];
+    }];
+    return [NSDictionary dictionaryWithDictionary:result];
+}
+
 @end
