@@ -48,4 +48,15 @@
     assertThat(values, containsInAnyOrder(@"value1", @"value2", nil));
 }
 
+-(void) test_filter_by_key_returns_a_subdictionary_with_keys_matching_block_condition {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    
+    NSDictionary *actual = [dict filterByKey:^(id key) {
+        return [key isEqual:@"key1"];
+    }];
+    
+    assertThat(actual , hasEntries(@"key1", @"value1", nil));
+}
+
+
 @end
