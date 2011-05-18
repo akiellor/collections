@@ -9,5 +9,6 @@
 -(NSDictionary *)filter:(BOOL(^)(id key, id value))block;
 -(NSDictionary *)first:(BOOL(^)(id key, id value))block;
 -(NSDictionary *)mapValues:(id(^)(id value))block;
+-(BOOL)hasKeys:(id)first, ...;
 
 @end

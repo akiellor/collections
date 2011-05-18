@@ -49,4 +49,19 @@
     return [NSDictionary dictionaryWithDictionary:result];
 }
 
+-(BOOL)hasKeys:(id)first, ...{
+    va_list keys;
+    if([[self allKeys] indexOfObject:first] == NSNotFound){
+        return NO;
+    }
+    BOOL result = YES;
+    id object;
+    va_start(keys, first);
+    while ((object = va_arg(keys, id)) != nil) {
+        result = result && ([[self allKeys] indexOfObject:object] != NSNotFound);
+    }
+    va_end(keys);
+    return result;
+}
+
 @end

@@ -84,4 +84,29 @@
     assertThat(actual, hasEntries(@"key1", @"woot 1", @"key2", @"woot 2", nil));
 }
 
+-(void) test_hasKeys_yields_YES_when_dictionary_has_all_specified_keys {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"key1", @"2", @"key2", @"3", @"key3", nil];
+    
+    BOOL actual = [dict hasKeys:@"key1", @"key2", nil];
+    
+    assertThatBool(actual, equalToBool(YES));
+}
+
+-(void) test_hasKeys_yields_NO_when_dictionary_does_not_have_all_specified_keys {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"key1", @"2", @"key2", @"3", @"key3", nil];
+    
+    BOOL actual = [dict hasKeys:@"key1", @"key7", @"bob", @"fred", nil];
+    
+    assertThatBool(actual, equalToBool(NO));
+}
+
+
+-(void) test_hasKeys_yields_NO_when_dictionary_does_not_have_first_specified_key {
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:@"1", @"key1", @"2", @"key2", @"3", @"key3", nil];
+    
+    BOOL actual = [dict hasKeys:@"key7", nil];
+    
+    assertThatBool(actual, equalToBool(NO));
+}
+
 @end
